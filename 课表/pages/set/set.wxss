@@ -1,0 +1,51 @@
+/* pages/set/set.wxss */
+/* pages/course/course.wxss */
+page{
+    width: 100%;
+    height: 100%;
+    background-image: url("http://r.photo.store.qq.com/psc?/V51tNpWb2FonU036uaZ52J0vZx42hUZ3/45NBuzDIW489QBoVep5mcTjNMbkBQzyY5Qaqw24aFTPbUGB4vNM8eDwD4vWvcoxmG7ga4tFVI8jO3bhEN2HftfHkXZGAf9cbQ0Iwd4FYAJg!/r");
+    background-size: 100% 100%;
+}
+
+.containers{
+    display: block; 
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.receipt_content{
+    position: relative; 
+    left: 0rpx; 
+    top: 950rpx;
+    width: 40%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar{
+      width: 250rpx;
+      height: 250rpx;
+      margin-top: 0%;
+      border-radius: 100px;
+  }
+  .clear{
+      border: 1px solid #EA5A3C;
+      width: 40%;
+      height: 80rpx;
+      margin-top: 10%;
+      font-size: 39rpx;
+      font-weight: bold;
+      color: #5bae23;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: azure;
+  }
+    .contact{
+        margin-top: 10%;
+        width: 40%;
+    }

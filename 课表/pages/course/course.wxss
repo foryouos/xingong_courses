@@ -1,0 +1,103 @@
+/* pages/course/course.wxss */
+page{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.top_text{
+    position: relative;
+    top: -15%;
+    font-size: 42rpx;
+    font-weight: bold;
+    /* line-height: 80rpx; */
+    color: #2fd39c;
+}
+.lesson_main{
+    position: relative;
+    top: -10%;
+}
+#course{
+    width: 745rpx; 
+    height: 725rpx; 
+    display:  inline-block; 
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+.classname_box{
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid #126bae;
+    border-radius: 5px;
+    width: 190rpx;
+    height: 100vh;
+    top: 10%;
+    display: fixed;
+    align-items: center;
+    justify-content: center;  
+    text-align: center;
+    background-color:#ef475d;
+}
+.class_name{
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #ffffff;
+    width: 1rpx;
+    height: vh;
+}
+.section{
+    position: relative;
+    bottom: 3%;
+    left: 36%;
+    
+}
+.picker{
+    display: fixed; 
+    box-sizing: border-box;
+    color: #ffffff;
+    border: 2px solid #126bae;
+    background-color: #c5708b;
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+}
+.picker_text{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+}
+
+.new_swiper {
+    width: 710rpx;
+    position: absolute;
+    height: 100rpx;
+    top: -10rpx;
+    z-index: 66;
+    left: 40rpx;
+  }
+  
+  .new_swiper swiper-view {
+    vertical-align: bottom;
+  }
+  .box_item {
+    display: inline-block;
+    height: 40rpx;
+    background: #bbb5ac;
+    border-radius: 23rpx;
+    box-sizing: border-box;
+    padding: 0 16rpx 0;
+    font-size: 20rpx;
+    letter-spacing:5rpx;
+    color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0;
+    line-height: 40rpx;
+    color: #fcd337;
+  }
+  

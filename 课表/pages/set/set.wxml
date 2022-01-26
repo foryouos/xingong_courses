@@ -1,0 +1,11 @@
+<!--pages/set/set.wxml-->
+<view  class="containerss">
+    <button  class="receipt_content" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" > 获取头像昵称</button>
+    <view class="container">
+        <image class="avatar" bindtap="bindViewTap" src="{{name.avatarUrl}}" mode="cover"></image>
+        <text class="motto">{{name.nickName}}</text> 
+        <text catchtap="clean_data" class="clear">清理缓存</text>
+        <button class="contact" open-type="contact" bindcontact="handleContact ">联系客服</button>
+    </view>  
+</view>
+

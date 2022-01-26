@@ -1,0 +1,84 @@
+/* pages/school_photo/school_photo.wxss */
+page{
+    overflow: hidden;
+    background: #d2357d;
+    background-image: url("http://r.photo.store.qq.com/psc?/V51tNpWb2FonU036uaZ52J0vZx42hUZ3/45NBuzDIW489QBoVep5mcVCjZAz.GSaRcYFbLI3IEjogpgf9jFweGrWMh3r3f45jLUGkmrjz*7mGvAQ2CRzhF1cTlsADWTJQ3eWCRILSVxQ!/r");
+    background-size: 100% 100%;
+   }
+   .leisure_scroll-box{
+    white-space: nowrap;
+    height: 105vh;
+   }
+   
+   .leisure_card-box{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    display: inline-block;
+   
+   }
+   .leisure_card{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box; */
+    height: 60vh;
+    width: 60vw;
+    margin: 15vh 6vw;
+    font-size: 20px;
+    background: #F8F2DC;
+    border-radius: 20px;
+     /* 文字内部超行进行换行 */
+     white-space:normal;  
+     flex-direction: column;
+     overflow:scroll;
+    
+   }
+   .week {
+    font-weight: bold;
+    display: fixed; 
+    text-align: center;
+    margin-top: 2%;
+    color: #12aa9c;
+   }
+   .day{
+    display: fixed; 
+    text-align: center;
+    margin-top: 2%;
+    color: #fecc11;
+   }
+   .day_content{
+    display: fixed; 
+    text-align: center;
+    margin-top: 2%;
+    color: #45b787
+   }
+
+   .new_swiper {
+    width: 710rpx;
+    position: absolute;
+    height: 100rpx;
+    top: -10rpx;
+    z-index: 66;
+    left: 40rpx;
+  }
+  
+  .new_swiper swiper-view {
+    vertical-align: bottom;
+  }
+  
+  .box_item {
+    display: inline-block;
+    height: 40rpx;
+    background: #e9d7df;
+    border-radius: 23rpx;
+    box-sizing: border-box;
+    padding: 0 16rpx 0;
+    font-size: 20rpx;
+    letter-spacing:5rpx;
+    color: #d2357d;
+    position: absolute;
+    bottom: 0;
+    line-height: 40rpx;
+  }
+  

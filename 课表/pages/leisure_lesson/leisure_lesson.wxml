@@ -1,0 +1,47 @@
+<!--pages/school_photo/school_photo.wxml-->
+<swiper class="new_swiper" vertical="true" autoplay="true" circular="true" interval="2000" duration="1500"
+  display-multiple-items='1' easing-function="easeInOutCubic">
+  <block wx:for-index="idx" wx:for='{{members}}' wx:key="index">
+    <swiper-item>
+      <view class="box_item">
+        <text>{{item}}</text>
+      </view>
+    </swiper-item>
+    <!-- 当仅有一条数据的时候，添加一条数据 实现滚动 -->
+    <swiper-item wx:if="{{members.length === 1}}">
+      <view class="box_item">
+        <text>{{item}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view class="leisure_scroll-box" scroll-x scroll-with-animation
+ scroll-into-view="{{toView}}"
+ scroll-left="{{scrollTop}}"
+ bindtouchstart="touchStart"
+ bindtouchend="touchEnd">
+ <!-- bindscrolltolower="lower"
+ bindscrolltoupper="upper" -->
+    <view wx:for="{{vacant_class}}"  wx:for-item="item" wx:for-index="weekindex" class="leisure_card-box" id="card_{{index}}"wx:key="index1">
+        <view class="leisure_card">
+            <!-- <text>{{today_week}}</text> -->
+            <view  wx:for="{{item}}" wx:for-item="item2"  wx:for-index="day_index" wx:key="index2">
+                <!-- <text>{{item2}}</text> -->
+                <view class="week">
+                    <text >{{day_index}}</text>
+                </view>
+                    <view  wx:for="{{item2}}" wx:for-item="item3"  wx:for-index="day_index3" wx:key="index3">
+                        <view  wx:for="{{item3}}" wx:for-item="item4"  wx:for-index="day_index4" wx:key="index4">
+                            <view class="day"> <text>{{day_index4}}</text> </view>
+                            <!-- <view class="day_content"><text>{{item4}}</text></view> -->
+                            <view  wx:for="{{item4}}" wx:for-item="item5"  wx:for-index="day_index5" wx:key="index5">
+                                <view class="day_content"><text>{{item5}}</text></view>
+                            </view>
+                        </view>
+                    </view>
+                
+            </view>
+            
+        </view>
+    </view>
+</scroll-view>

@@ -1,0 +1,55 @@
+{
+    "entryPagePath": "pages/index/index",
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/course/course",
+        "pages/set/set",
+        "pages/leisure_lesson/leisure_lesson",
+        "pages/course_schedule/course_schedule",
+        "pages/classroom/classroom",
+        "pages/school_photo/school_photo"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#bf3553",
+        "navigationBarTitleText": "新工课程表",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+       
+    },
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#1296db",
+        "backgroundColor": "#ee4863",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/iconpath/主页_no.png",
+                "selectedIconPath": "images/iconpath/主页.png"
+            },
+            {
+                "pagePath": "pages/course/course",
+                "text": "班级课表",
+                "iconPath": "images/iconpath/课表_no.png",
+                "selectedIconPath": "images/iconpath/课表.png"
+            },
+            {
+                "pagePath": "pages/set/set",
+                "text": "用户",
+                "iconPath": "images/iconpath/学生.png",
+                "selectedIconPath": "images/iconpath/女学生.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 20000,
+        "connectSocket": 20000,
+        "uploadFile": 20000,
+        "downloadFile": 20000
+    },
+    "debug": true,
+    "sitemapLocation": "sitemap.json"
+}

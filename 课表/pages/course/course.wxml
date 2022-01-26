@@ -1,0 +1,36 @@
+<!--pages/course/course.wxml-->
+<swiper class="new_swiper" vertical="true" autoplay="true" circular="true" interval="2000" duration="1500"
+  display-multiple-items='1' easing-function="easeInOutCubic">
+  <block wx:for-index="idx" wx:for='{{members}}' wx:key="index">
+    <swiper-item>
+      <view class="box_item">
+        <text>{{item}}</text>
+      </view>
+    </swiper-item>
+    <!-- 当仅有一条数据的时候，添加一条数据 实现滚动 -->
+    <swiper-item wx:if="{{members.length === 1}}">
+      <view class="box_item">
+        <text>{{item}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="container">
+<text class="top_text">2021~2022年第一学期课程表</text>
+    
+    <view class="lesson_main">
+        <image id="course" bindtap="previewImage" src="cloud://lesson-8g18rvb61f1050aa.6c65-lesson-8g18rvb61f1050aa-1309300071/course/{{array[index]}}.png"></image>
+    </view>
+    <view class="classname_box">
+        <text class="class_name">{{array[index]}}</text>
+    </view>
+    
+    <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker" >
+                <text class="picker_text">选择班级</text>
+            </view>
+        </picker>
+    </view>
+</view>
+

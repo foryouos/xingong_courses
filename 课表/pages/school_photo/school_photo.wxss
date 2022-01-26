@@ -1,0 +1,45 @@
+page {
+    background: #c04851;
+    background-image: url('http://r.photo.store.qq.com/psc?/V51tNpWb2FonU036uaZ52J0vZx42hUZ3/45NBuzDIW489QBoVep5mccb7z0MkCeP3tJ2j6nDHjXdcN9aDiwvMKSnAhi3XUoBVCCQyS5qcoLgSxwVPdBoXj1iLjc*wzT4r4rc3kT7DavY!/r');
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+  
+  }
+swiper{
+    position: relative;
+    width: 100%; 
+    height: 70%; 
+    display: flex; 
+    top: 15%;
+    /* left: 20%; */
+    box-sizing: border-box;
+    /* padding-top: 20%; */
+    /* display: flex;
+    top: 10rpx; */
+  }
+   
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+   
+  .zoom-out {
+    transform: scale(0.8);
+    transition: all 0.7s ease-out 0s;
+  }
+   
+  .zoom-in {
+    transform: scale(1);
+    transition: all 0.7s ease-in 0s;
+  }
+  .return_main{
+    position: relative; 
+    width: 72rpx; 
+    height: 74rpx; 
+    display: inline-block;
+    box-sizing: border-box; 
+    left: 20rpx;
+    bottom: 65%
+  }

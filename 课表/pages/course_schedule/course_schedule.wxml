@@ -1,0 +1,37 @@
+<!--pages/course_schedule/course_schedule.wxml-->
+<view class='table-module' >
+  <!-- 左侧固定 -->
+  <view class='left-policy-type'>
+    <view class='empty-box'></view>
+    <view wx:for="{{fruitTypeList}}" class='left-col-list' wx:key="index">
+      <view style="font-size:28rpx;  color: rebeccapurple;font-weight:bolder" class="shangxia">{{item.typeName}}</view>
+    </view>
+  </view>
+  <!-- 右侧表格滚动 -->
+  <scroll-view class="scroll-box" scroll-x="true" enable-flex="true">
+    <view class="scroll-view-item" wx:for="{{fruitList}}" wx:for-index="bigindex" wx:key="index">
+      <view class='company-name'>{{item.name}}</view>
+      <view wx:for="{{item.lists}}" wx:for-item="lesson" data-bigindex="{{bigindex}}" data-index='{{index}}' class='price-box' wx:key="index2">
+		<view class="price" wx:if="{{lesson.name != '没课'}}">
+			<text>{{lesson.name}}</text>
+			<text>{{lesson.teacher}}</text>
+			<text>{{lesson.room}}</text>
+			<text>{{lesson.time}}</text>
+		</view>
+        <view class="price" style="color:#FF6347" wx:elif="{{lesson.name == '没课'}}"></view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="containers">
+    <view class="section">
+        <picker bindchange="bindPickerChange" value="{{name_num}}" range="{{lesson_name_list}}">
+            <view class="picker">
+                <text class="picker_text">选择课程</text>
+                <!-- <text class="class_name">{{lesson_name_list[name_num]}}</text> -->
+            </view>
+        </picker>
+    </view>
+</view>
+

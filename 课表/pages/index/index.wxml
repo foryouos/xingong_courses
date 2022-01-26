@@ -1,0 +1,39 @@
+<!--pages/school_photo/school_photo.wxml-->
+<swiper class="new_swiper" vertical="true" autoplay="true" circular="true" interval="2000" duration="2000"
+  display-multiple-items='1' easing-function="easeInOutCubic">
+  <block wx:for-index="idx" wx:for='{{members}}' wx:key="index">
+    <swiper-item>
+      <view class="box_item">
+        <text>{{item}}</text>
+      </view>
+    </swiper-item>
+    <!-- 当仅有一条数据的时候，添加一条数据 实现滚动 -->
+    <swiper-item wx:if="{{members.length === 1}}">
+      <view class="box_item">
+        <text>{{item}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="container">
+  <image class="avatar" src="http://r.photo.store.qq.com/psc?/V51tNpWb2FonU036uaZ52J0vZx42hUZ3/45NBuzDIW489QBoVep5mca*Z7I9HjCq0daPrIr*UD78ZFfPvE0NVXoWZ7jX.R.11phun9xVfN*2KuNfNUcExkMcN7lWPni43XVR1EINS*98!/r">
+  </image>
+    <text class="motto">Hello</text>
+    <text class="motto">新工课程表</text>
+  <view class="containers">
+    <view catchtap="onTapJump_tab" class="journey-container">
+      <text class="journey">课程课表</text>
+    </view>
+    <view catchtap="onTapJump" class="journey-containers">
+      <text class="journeys">教室课表</text>
+    </view>
+  </view>
+  <view class="containers">
+    <view catchtap="onTapJump_photo" class="journey-container">
+      <text class="journey">瑞虎迎春</text>
+    </view>
+    <view catchtap="onTapJump_vacant" class="journey-containers">
+      <text class="journeys">空闲教室</text>
+    </view>
+  </view>
+</view>

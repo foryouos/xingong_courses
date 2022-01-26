@@ -1,0 +1,19 @@
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  previous-margin="{{previousMargin}}" 
+  next-margin="{{nextMargin}}"
+  circular="{{circular}}"
+  bindchange="swiperBindchange"
+ >
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item >
+      <image show-menu-by-longpress="1" src="{{item}}" class="slide-image {{currentSwiperIndex == index ? 'zoom-in' : 'zoom-out'}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+<image catchtap="return_main" class="return_main" src="http://r.photo.store.qq.com/psc?/V51tNpWb2FonU036uaZ52J0vZx42hUZ3/45NBuzDIW489QBoVep5mcVcDOaXXblCYMqO1JUopb.SGRhG8vTAhJIW5VwpQGIAvHaW*Ch1ShGyuFiDDSWVvNY.xQtCsMM9esG8Bflxw5ZA!/r" />
+
+
